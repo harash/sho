@@ -1,0 +1,237 @@
+
+/*------------------------------------------------
+
+ style.css
+
+------------------------------------------------*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+/* html
+------------------------------------------------*/
+html {
+	overflow-y: scroll;
+}
+
+/* body
+------------------------------------------------*/
+body { margin: 0;
+	color: #111;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	font-size: 16px;
+    font-weight: 200;
+	text-align: left;
+	line-height: 1.7em;
+	background:#fff;
+}
+
+/* link
+------------------------------------------------*/
+a{ font-size:100%;transition: 0.5s ;position: relative;display: inline-block; }
+a:link { color: #111; text-decoration: none; }
+a:visited { color: #111; text-decoration: none; }
+a:hover, a:active {color: #68a2f9 ;text-decoration: none; cursor:pointer; }
+a.under { color: #111; text-decoration:underline ; }
+a.under:hover { color: #111; text-decoration: none; }
+
+
+
+/* img
+------------------------------------------------*/
+img { border: 0; }
+a:active img { text-decoration: none; }
+a:hover img{
+	opacity:0.8;
+	-moz-opacity: 0.8; /* Firefox */
+	filter:alpha(opacity=80);  /* IE6/7 */
+	-ms-filter: "alpha( opacity=80 )"; /* IE8 */
+}
+
+
+/* h1, h2, h3, h4, h5, h6
+------------------------------------------------*/
+h1, h2, h3, h4, h5, h6{
+	line-height: 1em;
+	letter-spacing: 0em;
+	margin:0;
+}
+
+/* paragraph
+------------------------------------------------*/
+div { margin: 0; line-height: 1.7em; }
+p { margin: 0; line-height: 1.7em; }
+
+/* list
+------------------------------------------------*/
+ul {
+	list-style-type: disc;
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+ul li ul {
+	list-style: disc;
+	margin: 0;
+}
+
+ol {
+	list-style: decimal;
+	margin: 0;
+	padding-left: 0;
+}
+
+dl {
+	margin: 0;
+}
+dl dt {
+	margin: 0;
+	padding: 0;
+	line-height: 1.2;
+}
+dl dd {
+	margin: 0;
+	line-height: 1.5;
+}
+
+
+/* float
+------------------------------------------------*/
+.Lfloat {
+	float:left;
+}
+
+.Rfloat {
+	float:right;
+}
+
+
+/* [hack] clear fix
+--------------------------------------*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	display: inline-block;
+	min-height: 1%;  /* for IE 7*/
+}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+
+
+
+/* show_sp
+--------------------------------------*/
+.show_sp{
+	display:none;
+}
+
+
+/* general layout
+================================================*/
+/* wrap
+------------------------------------------------*/
+div#wrap{
+	min-width:100%;
+	max-width:100%;
+	margin:0 auto;
+    text-align: center;
+}
+
+/* header
+------------------------------------------------*/
+header{
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+header .comment{
+    width: 300px;
+    margin: 0 auto 80px;
+    padding-top: 250px;
+}
+
+/* footer
+------------------------------------------------*/
+
+footer{
+    background: #aaa;
+    color: #fff;
+	font-size: 12px;
+    padding: 100px 0;
+}
+
+/* index
+------------------------------------------------*/
+h2{
+    font-size: 48px;
+    font-weight: 100;
+}
+
+section article{
+    width: 100%;
+}
+
+section article h2{
+    padding: 0 0 50px;
+}
+
+/* top */
+#top{
+    background: #eee;
+    padding: 100px 0;
+}
+
+
+/* portfolio */
+#portfolio{
+    padding: 100px 0;
+}
+
+#portfolio ul{
+    width: 660px;
+    margin: 0 auto;
+}
+
+#portfolio ul li{
+    width: 200px;
+    float: left;
+    margin: 0 30px 30px 0;
+}
+
+#portfolio ul li:nth-child(3n){
+    margin-right: 0;
+}
+
+#portfolio ul li img{
+    width: 100%;
+}
+
+
+/* about */
+#about{
+    background: #eee;
+    padding: 100px 0;
+}
+
+#about .photo img{
+    width: 300px;
+    padding: 30px 0 50px;
+}
+
+
+/* contact */
+#contact{
+    padding: 300px 0;
+}
+
+
+
