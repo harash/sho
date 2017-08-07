@@ -1,14 +1,17 @@
 
 /*------------------------------------------------
 
- style.css
+ common.css
 
 ------------------------------------------------*/
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+/* general rules
+================================================*/
 /* html
 ------------------------------------------------*/
 html {
 	overflow-y: scroll;
+	height:100%;
 }
 
 /* body
@@ -16,35 +19,26 @@ html {
 body { margin: 0;
 	color: #111;
 	font-family: 'Noto Sans Japanese', sans-serif;
-	font-size: 16px;
-    font-weight: 200;
+	font-size: 90%;
 	text-align: left;
-	line-height: 1.7em;
+	line-height: 1;
+	height:100%;
 	background:#fff;
+	-webkit-text-size-adjust: none;
+}
+body > #wrap {
+	height: auto;
+	width: auto;
 }
 
 /* link
 ------------------------------------------------*/
-a{ font-size:100%;transition: 0.5s ;position: relative;display: inline-block; }
+a{ font-size:100%; }
 a:link { color: #111; text-decoration: none; }
 a:visited { color: #111; text-decoration: none; }
-a:hover, a:active {color: #68a2f9 ;text-decoration: none; cursor:pointer; }
+a:hover, a:active { color: #68a2f9; text-decoration: none; cursor:pointer; }
 a.under { color: #111; text-decoration:underline ; }
-a.under:hover { color: #111; text-decoration: none; }
-
-
-
-/* img
-------------------------------------------------*/
-img { border: 0; }
-a:active img { text-decoration: none; }
-a:hover img{
-	opacity:0.8;
-	-moz-opacity: 0.8; /* Firefox */
-	filter:alpha(opacity=80);  /* IE6/7 */
-	-ms-filter: "alpha( opacity=80 )"; /* IE8 */
-}
-
+a.under:hover { color: #111; text-decoration:none ; }
 
 /* h1, h2, h3, h4, h5, h6
 ------------------------------------------------*/
@@ -54,10 +48,13 @@ h1, h2, h3, h4, h5, h6{
 	margin:0;
 }
 
+/* margin
+------------------------------------------------*/
+
 /* paragraph
 ------------------------------------------------*/
-div { margin: 0; line-height: 1.7em; }
-p { margin: 0; line-height: 1.7em; }
+div { margin: 0; line-height: 1.5em; }
+p { margin: 0; line-height: 1.5em; }
 
 /* list
 ------------------------------------------------*/
@@ -96,6 +93,9 @@ dl dd {
 }
 
 
+/* common rules
+================================================*/
+
 /* float
 ------------------------------------------------*/
 .Lfloat {
@@ -106,6 +106,23 @@ dl dd {
 	float:right;
 }
 
+/* border
+------------------------------------------------*/
+#member_menu td.borderB {
+	border-bottom: #333 solid 1px;
+}
+
+#member_menu td.borderT {
+	border-top: #333 solid 1px;
+}
+
+#member_menu td.borderR {
+	border-right: #333 solid 1px;
+}
+
+#member_menu td.borderL {
+	border-left: #333 solid 1px;
+}
 
 /* [hack] clear fix
 --------------------------------------*/
@@ -127,45 +144,20 @@ dl dd {
 
 
 
-/* show_sp
+/* show_pc
 --------------------------------------*/
-.show_sp{
+.show_pc{
 	display:none;
 }
 
 
-/* general layout
-================================================*/
-/* wrap
-------------------------------------------------*/
-div#wrap{
-	min-width:100%;
-	max-width:100%;
-	margin:0 auto;
-    text-align: center;
+/* fadein
+--------------------------------------*/
+.fadein {
+    animation: fadeIn 5s ease 0s 1 normal;
+    -webkit-animation: fadeIn 5s ease 0s 1 normal;
 }
 
-/* header
-------------------------------------------------*/
-header{
-    width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-}
-
-header .comment{
-    width: 300px;
-    margin: 0 auto 80px;
-    padding-top: 250px;
-}
-/*anime*/
-header .comment span:nth-child(1){animation: fadeIn 1s ease 0s 1 normal;}
-header .comment span:nth-child(2){animation: fadeIn 6s ease 0s 1 normal;}
-header .comment span:nth-child(3){animation: fadeIn 5s ease 0s 1 normal;}
-header .comment span:nth-child(4){animation: fadeIn 4s ease 0s 1 normal;}
-header .comment span:nth-child(5){animation: fadeIn 3s ease 0s 1 normal;}
-header .comment span:nth-child(6){animation: fadeIn 2s ease 0s 1 normal;}
-header .comment span:nth-child(7){animation: fadeIn 1s ease 0s 1 normal;}
 @keyframes fadeIn {
     0% {opacity: 0}
     100% {opacity: 1}
@@ -176,6 +168,41 @@ header .comment span:nth-child(7){animation: fadeIn 1s ease 0s 1 normal;}
     100% {opacity: 1}
 }
 
+
+
+
+/* general layout
+================================================*/
+/* wrap
+------------------------------------------------*/
+div#wrap{
+	min-width:100%;
+	max-width:100%;
+	margin:0 auto;
+	height: 100%;
+	position:relative;
+    background: none;
+    background-size: cover;
+}
+
+/* header
+------------------------------------------------*/
+header{
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100%;
+    max-height: 100%;
+}
+header h1 img{
+    width: 100%;
+}
+
+header .comment{
+    width: 60%;
+    margin: 0 auto 30%;
+    padding-top: 40%;
+}
+
 /* footer
 ------------------------------------------------*/
 
@@ -184,6 +211,7 @@ footer{
     color: #fff;
 	font-size: 12px;
     padding: 100px 0;
+    text-align: center;
 }
 
 /* index
@@ -194,7 +222,8 @@ h2{
 }
 
 section article{
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 section article h2{
@@ -214,17 +243,17 @@ section article h2{
 }
 
 #portfolio ul{
-    width: 660px;
+    width: 100%;
     margin: 0 auto;
 }
 
 #portfolio ul li{
-    width: 200px;
+    width: 47%;
     float: left;
-    margin: 0 30px 30px 0;
+    margin: 0 6% 5% 0;
 }
 
-#portfolio ul li:nth-child(3n){
+#portfolio ul li:nth-child(2n){
     margin-right: 0;
 }
 
@@ -249,6 +278,7 @@ section article h2{
 #contact{
     padding: 300px 0;
 }
+
 
 
 
