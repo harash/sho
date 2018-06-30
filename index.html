@@ -7,11 +7,6 @@
 <meta name="keywords" content="Sho Kagaya,加賀谷,翔,デザイン,design,ポートフォリオ,ドラム,ドラマー,drums,drummer,スロロリス,slololis,バンド,ポストロック,post rock,シュゲイザー,">
 <meta http-equiv="Content-Style-Type" content="text/css"> 
 <meta http-equiv="Content-Script-Type" content="text/javascript">
-<meta property="og:title" content="Sho Kagaya">
-<meta property="og:site_name" content="http://">
-<meta property="og:type" content="website">
-<meta property="og:image" content="img/img.default.gif">
-<meta property="og:url" content="http://">
 <meta property="og:description" content="Sho Kagaya">
 <link rel="shortcut icon" href="images/favicon.ico">
 <title>Sho Kagaya</title>
@@ -21,23 +16,25 @@
 
 <!-- sp -->
 <link href="css/style_sp.css" rel="stylesheet" media="screen and (max-width: 768px)" type="text/css">
-	
-<!-- 共通 -->
-<link rel="stylesheet" href="css/lightbox.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>	
-</head>
 
+<link href="css/anime.css" rel="stylesheet" type="text/css">
+</head>
 <body>
 <div id="wrap">
 	<header>
-        <div class="comment">
-            <span>H</span><span>i</span><span>,</span> <span>I</span><span>'</span><span>m</span> <span>S</span><span>h</span><span>o</span> <span>K</span><span>a</span><span>g</span><span>a</span><span>y</span><span>a</span><span>.</span><span>I</span><span>'</span><span>ｍ</span> <span>d</span><span>o</span><span>i</span><span>n</span><span>g</span> <span>a</span> <span>D</span><span>r</span><span>u</span><span>m</span><span>m</span><span>e</span><span>r</span> <span>a</span><span>n</span><span>d</span> <span>W</span><span>e</span><span>b</span><span>D</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span><span>e</span><span>r</span><span>.</span><wbr>
-            Thank you. <wbr>
-            94' model.
-        </div>
+        <article>
+            <div class="comment top">
+                <span>H</span><span>i</span><span>,</span><span>I</span><span>'</span><span>m</span><span>S</span><span>h</span><span>o</span><span>K</span><span>a</span><span>g</span><span>a</span><span>y</span><span>a</span><span>.</span><span>I</span><span>'</span><span>ｍ</span><span>d</span><span>o</span><span>i</span><span>n</span><span>g</span><span>a</span><span>D</span><span>r</span><span>u</span><span>m</span><span>m</span><span>e</span><span>r</span>
+            </div>
+            <div class="comment under">
+                <span>a</span><span>n</span><span>d</span><span>W</span><span>e</span><span>b</span><span>D</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span><span>e</span><span>r</span><span>.</span>
+                <span>T</span><span>h</span><span>a</span><span>n</span><span>k</span><span>y</span><span>o</span><span>u</span><span>.</span>
+                <span>9</span><span>4</span><span>'</span><span>m</span><span>o</span><span>d</span><span>e</span><span>l</span><span>.</span>
+            </div>
+        </article>
 	    <h1><img src="img/sho_logo.png" alt="SHO KAGAYA DESIGN & DRUMS"></h1>
 	</header>
-	
+
 	<!-- TOP -->
 	<section id="top">
 	    <article>
@@ -46,31 +43,66 @@
 	            スタイリッシュなデザインを心がけて作成しています。<br>
                 スロロリスというバンドのドラマーとしても活動しています。<br>
                 お金のないバンドマンに優しいデザイナー兼ミュージシャンを目指
-                しております。<br>
-
-                <span>ドラム、デザインお問い合わせは<a href="#contact" class="under">こちら</a>から</span>
+                しております。
 	        </div>
 	    </article>
 	</section>
-	
+
 	<!-- PORTFOLIO -->
 	<section id="portfolio">
 	    <article>
             <h2>PORTFOLIO</h2>
-            <ul class="clearfix">
-                <li><img src="img/fuji_woman.png" alt="富士女"></li>
-                <li><img src="img/fuji_woman.png" alt="富士女"></li>
-                <li><img src="img/fuji_woman.png" alt="富士女"></li>
-                <li><img src="img/fuji_woman.png" alt="富士女"></li>
-                <li><img src="img/fuji_woman.png" alt="富士女"></li>
-                <li><img src="img/fuji_woman.png" alt="富士女"></li>
-                <li><img src="img/fuji_woman.png" alt="富士女"></li>
-                <li><img src="img/fuji_woman.png" alt="富士女"></li>
-                <li><img src="img/fuji_woman.png" alt="富士女"></li>
+            <ul>
+                <li><a href="#photo01"><img src="img/fuji_woman.jpg" alt="富士女"></a></li>
+                <li><a href="#photo02"><img src="img/marching.jpg" alt="marching elephant"></a></li>
+                <li><a href="#photo03"><img src="img/old.jpg" alt="トンネル"></a></li>
+                <li><a href="#photo04"><img src="img/hl_card.jpg" alt="フライヤーカード"></a></li>
+                <li><a href="#photo05"><img src="img/band.jpg" alt="slololisHP"></a></li>
+                <li><a href="#photo06"><img src="img/hukei.jpg" alt="風景"></a></li>
             </ul>
+
+            <div id="modal">
+                <div id="photo01">
+                    <a href="" class="close_overlay">×</a>
+                    <div class="modal_window">
+                        <img src="img/fuji_woman.jpg" alt="富士女">
+                    </div>
+                </div>
+                <div id="photo02">
+                    <a href="" class="close_overlay">×</a>
+                    <div class="modal_window">
+                        <img src="img/marching.jpg" alt="marching elephant">
+                    </div>
+                </div>
+                <div id="photo03">
+                    <a href="" class="close_overlay">×</a>
+                    <div class="modal_window">
+                        <img src="img/old.jpg" alt="トンネル">
+                    </div>
+                </div>
+                <div id="photo04">
+                    <a href="" class="close_overlay">×</a>
+                    <div class="modal_window">
+                        <img src="img/hl_card.jpg" alt="フライヤーカード">
+                    </div>
+                </div>
+                <div id="photo05">
+                    <a href="" class="close_overlay">×</a>
+                    <div class="modal_window">
+                        <img src="img/band.jpg" alt="slololisHP">
+                        <a href="http://slololis.com" target="_blank">slololis.com</a>
+                    </div>
+                </div>
+                <div id="photo06">
+                    <a href="" class="close_overlay">×</a>
+                    <div class="modal_window">
+                        <img src="img/hukei.jpg" alt="風景">
+                    </div>
+                </div>
+            </div>
 	    </article>
 	</section>
-	
+
 	<!-- ABOUT -->
 	<section id="about">
 	    <article>
@@ -79,13 +111,14 @@
             <div class="photo">
                 <img src="img/about_img.jpg" alt="about">
             </div>
-            1994生まれ。<br>
+            1994/7/19生まれ。<br>
             10歳の時、ドラムに興味を持ち独学で活動開始。<br>
             2014年自身のバンド"<a href="http://slololis.com" target="_blank">slololis</a>"を結成。<br>
-            同年、デザインを独学で勉強しデザイナーとしても活動中。
+            現在は様々なバンド、アーティストのライブサポート・レコーディングで活動し、<br>
+            UI/UX、ロゴ、フライヤー等も制作しデザイナーとして活動中。
 	    </article>
 	</section>
-	
+
 	<!-- CONTACT -->
 	<section id="contact">
 	    <article>
@@ -93,7 +126,7 @@
             ドラム・デザインに関してのご依頼、お問い合わせは<a href="mailto:drums.sho@gmail.com" class="under">こちら</a>から
 	    </article>
 	</section>
-	
+
 	<footer>Copyright © ShoKagaya All Rights Reserved.</footer>
 </div>
 </body>
