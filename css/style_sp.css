@@ -132,7 +132,7 @@ header h1 img{
 header article{
     width: 100%;
     margin: 0 auto 30%;
-    padding-top: 250px;
+    padding-top: 200px;
     font-size: 14px;
 }
 header .comment{
@@ -147,7 +147,7 @@ footer{
     background: #aaa;
     color: #fff;
 	font-size: 12px;
-    padding: 100px 0;
+    padding: 50px 0;
     text-align: center;
 }
 
@@ -263,9 +263,7 @@ div#modal div:target {
 
 /* contact */
 #contact{
-    padding: 300px 0;
+    padding: 200px 0;
 }
-
-
 
 
