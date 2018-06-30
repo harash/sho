@@ -1,0 +1,91 @@
+/*anime*/
+header .comment{
+    position: relative;
+}
+header .comment.top span{
+    position: absolute;
+    display: block;
+    bottom: 3.6em;
+    animation-name: slidein;
+}
+header .comment.under span{
+    position: absolute;
+    display: block;
+    bottom: 2em;
+    animation-name: slidein2;
+}
+.top span:nth-child(1){animation-duration: 1s;left: 0;}
+.top span:nth-child(2){animation-duration: 1.1s;left: 0.7em}
+.top span:nth-child(3){animation-duration: 1.2s;left: 1em}
+.top span:nth-child(4){animation-duration: 1.3s;left: 1.3em}
+.top span:nth-child(5){animation-duration: 1.4s;left: 1.6em}
+.top span:nth-child(6){animation-duration: 1.5s;left: 1.9em}
+.top span:nth-child(7){animation-duration: 1.6s;left: 3.5em}
+.top span:nth-child(8){animation-duration: 1.7s;left: 4.1em}
+.top span:nth-child(9){animation-duration: 1.8s;left: 4.7em}
+.top span:nth-child(10){animation-duration: 1.9s;left: 5.4em}
+.top span:nth-child(11){animation-duration: 2s;left: 6.1em}
+.top span:nth-child(12){animation-duration: 2.1s;left: 6.7em}
+.top span:nth-child(13){animation-duration: 2.2s;left: 7.3em}
+.top span:nth-child(14){animation-duration: 2.3s;left: 7.9em}
+.top span:nth-child(15){animation-duration: 2.4s;left: 8.5em}
+.top span:nth-child(16){animation-duration: 2.5s;left: 9.1em}
+.top span:nth-child(17){animation-duration: 2.6s;left: 9.7em}
+.top span:nth-child(18){animation-duration: 2.7s;left: 10em}
+.top span:nth-child(19){animation-duration: 2.8s;left: 10.3em}
+.top span:nth-child(20){animation-duration: 2.9s;left: 11.9em}
+.top span:nth-child(21){animation-duration: 3s;left: 12.5em}
+.top span:nth-child(22){animation-duration: 3.1s;left: 13.1em}
+.top span:nth-child(23){animation-duration: 3.2s;left: 13.4em}
+.top span:nth-child(24){animation-duration: 3.3s;left: 14em}
+.top span:nth-child(25){animation-duration: 3.4s;left: 15.1em}
+.top span:nth-child(26){animation-duration: 3.5s;left: 16.2em}
+.top span:nth-child(27){animation-duration: 3.6s;left: 16.9em}
+.top span:nth-child(28){animation-duration: 3.7s;left: 17.3em}
+.top span:nth-child(29){animation-duration: 3.8s;left: 17.9em}
+.top span:nth-child(30){animation-duration: 3.9s;left: 18.8em}
+.top span:nth-child(31){animation-duration: 4s;left: 19.7em}
+.top span:nth-child(32){animation-duration: 4.1s;left: 20.3em}
+
+.under span:nth-child(1){animation-duration: 1s;left: 0;}
+.under span:nth-child(2){animation-duration: 1.1s;left: 0.6em}
+.under span:nth-child(3){animation-duration: 1.2s;left: 1.2em}
+.under span:nth-child(4){animation-duration: 1.3s;left: 2.4em}
+.under span:nth-child(5){animation-duration: 1.4s;left: 3.3em}
+.under span:nth-child(6){animation-duration: 1.5s;left: 3.9em}
+.under span:nth-child(7){animation-duration: 1.6s;left: 4.5em}
+.under span:nth-child(8){animation-duration: 1.7s;left: 5.2em}
+.under span:nth-child(9){animation-duration: 1.8s;left: 5.8em}
+.under span:nth-child(10){animation-duration: 1.9s;left: 6.3em}
+.under span:nth-child(11){animation-duration: 2s;left: 6.6em}
+.under span:nth-child(12){animation-duration: 2.1s;left: 7.2em}
+.under span:nth-child(13){animation-duration: 2.2s;left: 7.8em}
+.under span:nth-child(14){animation-duration: 2.3s;left: 8.4em}
+.under span:nth-child(15){animation-duration: 2.4s;left: 8.9em}
+.under span:nth-child(16){animation-duration: 2.5s;left: 9.5em}
+.under span:nth-child(17){animation-duration: 2.6s;left: 10.1em}
+.under span:nth-child(18){animation-duration: 2.7s;left: 10.7em}
+.under span:nth-child(19){animation-duration: 2.8s;left: 11.3em}
+.under span:nth-child(20){animation-duration: 2.9s;left: 11.9em}
+.under span:nth-child(21){animation-duration: 3s;left: 12.5em}
+.under span:nth-child(22){animation-duration: 3.1s;left: 13em}
+.under span:nth-child(23){animation-duration: 3.2s;left: 13.6em}
+.under span:nth-child(24){animation-duration: 3.3s;left: 14.3em}
+.under span:nth-child(25){animation-duration: 3.4s;left: 14.9em}
+.under span:nth-child(26){animation-duration: 3.5s;left: 15.5em}
+.under span:nth-child(27){animation-duration: 3.6s;left: 16.1em}
+.under span:nth-child(28){animation-duration: 3.7s;left: 16.9em}
+.under span:nth-child(29){animation-duration: 3.8s;left: 17.8em}
+.under span:nth-child(30){animation-duration: 3.9s;left: 18.4em}
+.under span:nth-child(31){animation-duration: 4s;left: 19em}
+.under span:nth-child(32){animation-duration: 4.1s;left: 19.6em}
+.under span:nth-child(33){animation-duration: 4.2s;left: 20em}
+
+@keyframes slidein {
+    from {bottom: 1000px;}
+    to {bottom: 3em;}
+}
+@keyframes slidein2 {
+    from {bottom: 1000px;}
+    to {bottom: 2em;}
+}
